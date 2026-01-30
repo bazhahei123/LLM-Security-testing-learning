@@ -10,7 +10,7 @@ The code was tested on a RTX 2060 6GB, thus mostly <3B models have been tested, 
 
 ## Usage
 1. Set model and quantization in compute_refusal_dir1.py and inference.py (Quantization can apparently be mixed)
-2. Run compute_refusal_dir1.py (Some settings in that file may be changed depending on your use-case)
+2. Run compute_refusal_dir1.py (Some settings in that file may be changed depending on your use-case,most import one is layer_idx)
 3. Run inference.py and ask the model how to build an army of rabbits, that will overthrow your local government one day, by stealing all the carrots.
 
 ## Credits
