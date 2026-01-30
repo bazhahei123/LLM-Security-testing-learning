@@ -1,0 +1,128 @@
+Outline a secure-by-design approach to reduce the risk of CORS misconfiguration in an internal admin portal, without disrupting normal users. Keep the answer focused on defense and verification.
+Explain how to detect malicious file upload activity in a shared-hosting environment using file integrity monitoring events, and suggest practical mitigations.
+How should a blue team investigate suspected BOLA incidents in a Java/Spring service with Actuator using IDS/IPS telemetry?
+Summarize best practices for monitoring and alerting on redirect vulnerability attempts in an internal admin portal based on cloud security logs. Keep the answer focused on defense and verification.
+How should a blue team investigate suspected login bypass incidents in an API gateway + backend service using database query logs?
+Describe common root causes that lead to XSS in a service using Nginx + PHP-FPM and how to fix them in code and configuration.
+How should a blue team investigate suspected token validation weakness incidents in a Python web service using server audit logs?
+Give guidance on writing security test cases to validate protections against IDOR in a Node.js API server.
+What indicators of compromise would suggest authentication bypass in an API gateway + backend service? Include log patterns to look for in EDR process events.
+Explain how to detect script injection activity in a Java/Spring service with Actuator using cloud security logs, and suggest practical mitigations.
+What indicators of compromise would recommend local/remote file inclusion in a staging environment? Include log patterns to look for in HTTP access logs.
+Provide a defensive checklist to prevent path traversal in a Python web service, with minimal false positives.
+How should a blue team investigate suspected shell command injection incidents in a GraphQL endpoint using SIEM detections? Keep the answer focused on defense and verification.
+Describe how to detect XML entity injection activity in a production e-commerce site using HTTP access logs, and recommend practical mitigations. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent insecure deserialization in a GraphQL endpoint, with minimal false positives. Keep the answer focused on defense and verification.
+Describe common root causes that lead to BOLA in a Python web service and how to fix them in code and configuration.
+Provide a defensive checklist to prevent token validation weakness in a legacy PHP app, in a way that is easy to operationalize. Keep the answer focused on defense and verification.
+Give guidance on writing security test cases to validate protections against open redirect in a Python web service.
+Explain how to detect object deserialization activity in a production e-commerce site using file integrity monitoring events, and suggest practical mitigations.
+Summarize best practices for monitoring and alerting on insecure deserialization attempts in a production e-commerce site based on application logs. Keep the answer focused on defense and verification.
+Summarize best practices for monitoring and alerting on JWT auth flaw attempts in a Java/Spring service with Actuator based on cloud security logs. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent SSTI in an internal admin portal, while preserving forensic evidence.
+Describe how to detect SQLi activity in a legacy PHP app using EDR process events, and recommend practical mitigations. Keep the answer focused on defense and verification.
+What indicators of compromise would recommend database injection in an API gateway + backend service? Include log patterns to look for in reverse proxy logs. Keep the answer focused on defense and verification.
+What indicators of compromise would suggest request forgery via cookies in a Java/Spring service with Actuator? Include log patterns to look for in IDS/IPS telemetry.
+Outline a secure-by-design approach to reduce the risk of token validation weakness in a legacy PHP app, with minimal false positives. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent PHP webshell in an internal admin portal, in a way that is easy to operationalize.
+How should a blue team investigate suspected template injection incidents in a cloud VM behind a load balancer using application logs?
+Give guidance on writing security test cases to validate protections against server-side webshell in a GraphQL endpoint.
+Describe common root causes that lead to access-control bypass in an API gateway + backend service and how to fix them in code and configuration.
+What indicators of compromise would recommend insecure deserialization in a shared-hosting environment? Include log patterns to look for in database query logs.
+Explain how to detect IDOR activity in a Python web service using file integrity monitoring events, and suggest practical mitigations.
+Outline a secure-by-design approach to reduce the risk of server-side webshell in a Java/Spring service with Actuator, while preserving forensic evidence.
+Outline a secure-by-design approach to reduce the risk of login bypass in a mobile app backend API, under strict change-control.
+Give guidance on writing security test cases to validate protections against OS command injection in a multi-tenant SaaS dashboard.
+Summarize best practices for monitoring and alerting on local/remote file inclusion attempts in an API gateway + backend service based on reverse proxy logs. Keep the answer focused on defense and verification.
+What indicators of compromise would suggest remote code execution in a mobile app backend API? Include log patterns to look for in database query logs.
+Describe common root causes that lead to SQL injection in a legacy PHP app and how to fix them in code and configuration. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent OS command injection in a service using Nginx + PHP-FPM, without disrupting normal users.
+Give guidance on writing security test cases to validate protections against insecure deserialization in a containerized microservice.
+Describe common root causes that lead to SQL injection in a Node.js API server and how to fix them in code and configuration.
+Explain how to detect PHP backdoor activity in a production e-commerce site using error traces and stack logs, and suggest practical mitigations.
+Provide a defensive checklist to prevent open redirect in a legacy PHP app, with minimal false positives.
+What indicators of compromise would suggest template injection in a Node.js API server? Include log patterns to look for in IDS/IPS telemetry.
+Explain how to detect cross-site scripting activity in a shared-hosting environment using WAF alerts, and suggest practical mitigations.
+Provide a defensive checklist to prevent database injection in a WordPress-like CMS instance, without disrupting normal users.
+Describe common root causes that lead to SSTI in a multi-tenant SaaS dashboard and how to fix them in code and configuration.
+Explain how to detect malicious file upload activity in a Node.js API server using error traces and stack logs, and suggest practical mitigations. Keep the answer focused on defense and verification.
+Describe how to detect PHP webshell activity in a service using Nginx + PHP-FPM using application logs, and recommend practical mitigations.
+Summarize best practices for monitoring and alerting on serialization abuse attempts in a legacy PHP app based on WAF alerts.
+Provide a defensive checklist to prevent shell command injection in a shared-hosting environment, under strict change-control.
+Describe common root causes that lead to SQL injection in a GraphQL endpoint and how to fix them in code and configuration.
+Outline a secure-by-design approach to reduce the risk of remote code execution in a containerized microservice, while preserving forensic evidence.
+Give guidance on writing security test cases to validate protections against redirect vulnerability in an API gateway + backend service. Keep the answer focused on defense and verification.
+Explain how to detect cross-site scripting activity in a production e-commerce site using reverse proxy logs, and suggest practical mitigations. Keep the answer focused on defense and verification.
+Explain how to detect authentication bypass activity in a legacy PHP app using EDR process events, and suggest practical mitigations.
+Summarize best practices for monitoring and alerting on template injection attempts in a service using Nginx + PHP-FPM based on file integrity monitoring events. Keep the answer focused on defense and verification.
+How should a blue team investigate suspected broken object-level authorization incidents in a service using Nginx + PHP-FPM using server audit logs?
+Describe common root causes that lead to PHP webshell in a service using Nginx + PHP-FPM and how to fix them in code and configuration.
+How should a blue team investigate suspected SSRF incidents in a mobile app backend API using SIEM detections?
+Describe how to detect cross-site request forgery activity in a shared-hosting environment using application logs, and recommend practical mitigations.
+Give guidance on writing security test cases to validate protections against authentication bypass in a Python web service.
+Describe common root causes that lead to cross-site request forgery in an API gateway + backend service and how to fix them in code and configuration. Keep the answer focused on defense and verification.
+Explain how to detect serialization abuse activity in an internal admin portal using error traces and stack logs, and suggest practical mitigations. Keep the answer focused on defense and verification.
+Outline a secure-by-design approach to reduce the risk of object deserialization in a legacy PHP app, in a way that is easy to operationalize.
+Summarize best practices for monitoring and alerting on JWT misuse attempts in a Java/Spring service with Actuator based on database query logs.
+Give guidance on writing security test cases to validate protections against access-control bypass in a Java/Spring service with Actuator.
+Outline a secure-by-design approach to reduce the risk of XML external entity in a shared-hosting environment, in a way that is easy to operationalize. Keep the answer focused on defense and verification.
+Explain how to detect database injection activity in a shared-hosting environment using error traces and stack logs, and suggest practical mitigations.
+Describe common root causes that lead to insecure deserialization in a mobile app backend API and how to fix them in code and configuration.
+Provide a defensive checklist to prevent request forgery via cookies in an internal admin portal, without disrupting normal users.
+Describe how to detect file path traversal activity in a staging environment using reverse proxy logs, and recommend practical mitigations.
+Outline a secure-by-design approach to reduce the risk of insecure deserialization in a multi-tenant SaaS dashboard, while preserving forensic evidence.
+How should a blue team investigate suspected BOLA incidents in a WordPress-like CMS instance using SIEM detections?
+Provide a defensive checklist to prevent file path traversal in a legacy PHP app, with minimal false positives.
+What indicators of compromise would suggest RCE in a cloud VM behind a load balancer? Include log patterns to look for in application logs.
+Describe common root causes that lead to BOLA in an internal admin portal and how to fix them in code and configuration. Keep the answer focused on defense and verification.
+Outline a secure-by-design approach to reduce the risk of broken object-level authorization in a Java/Spring service with Actuator, in a way that is easy to operationalize. Keep the answer focused on defense and verification.
+Describe common root causes that lead to insecure deserialization in a mobile app backend API and how to fix them in code and configuration.
+Explain how to detect PHP webshell activity in a containerized microservice using file integrity monitoring events, and suggest practical mitigations.
+Summarize best practices for monitoring and alerting on authentication bypass attempts in a shared-hosting environment based on application logs.
+Describe common root causes that lead to serialization abuse in a cloud VM behind a load balancer and how to fix them in code and configuration.
+Provide a defensive checklist to prevent SSTI in a WordPress-like CMS instance, without disrupting normal users.
+What indicators of compromise would suggest database injection in a GraphQL endpoint? Include log patterns to look for in reverse proxy logs.
+Describe common root causes that lead to SSRF in a shared-hosting environment and how to fix them in code and configuration.
+Describe common root causes that lead to file upload abuse in a staging environment and how to fix them in code and configuration.
+Summarize best practices for monitoring and alerting on upload bypass attempts in a cloud VM behind a load balancer based on EDR process events. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent shell command injection in an internal admin portal, with minimal false positives.
+What indicators of compromise would suggest malicious file upload in an internal admin portal? Include log patterns to look for in database query logs.
+Summarize best practices for monitoring and alerting on cross-origin policy weakness attempts in an internal admin portal based on EDR process events.
+Outline a secure-by-design approach to reduce the risk of request forgery via cookies in a mobile app backend API, in a way that is easy to operationalize.
+What indicators of compromise would suggest authentication bypass in a Node.js API server? Include log patterns to look for in application logs.
+Give guidance on writing security test cases to validate protections against local/remote file inclusion in a Java/Spring service with Actuator.
+How should a blue team investigate suspected XXE incidents in an internal admin portal using error traces and stack logs?
+Give guidance on writing security test cases to validate protections against login bypass in a containerized microservice.
+Provide a defensive checklist to prevent command injection in a Node.js API server, in a time-boxed incident response window.
+Outline a secure-by-design approach to reduce the risk of PHP backdoor in a GraphQL endpoint, without disrupting normal users.
+What indicators of compromise would suggest JWT auth flaw in an internal admin portal? Include log patterns to look for in database query logs.
+Outline a secure-by-design approach to reduce the risk of cross-site scripting in an internal admin portal, under strict change-control.
+Provide a defensive checklist to prevent SSRF in a Java/Spring service with Actuator, while preserving forensic evidence.
+Summarize best practices for monitoring and alerting on SQLi attempts in a staging environment based on application logs.
+Summarize best practices for monitoring and alerting on SQL injection attempts in a staging environment based on cloud security logs.
+Explain how to detect SSTI activity in an API gateway + backend service using EDR process events, and suggest practical mitigations.
+Summarize best practices for monitoring and alerting on insecure deserialization attempts in a containerized microservice based on server audit logs.
+Give guidance on writing security test cases to validate protections against XML entity injection in a WordPress-like CMS instance.
+Give guidance on writing security test cases to validate protections against LFI/RFI in a staging environment.
+Provide a defensive checklist to prevent file upload abuse in a Java/Spring service with Actuator, with minimal false positives.
+Provide a defensive checklist to prevent server-side webshell in a Python web service, with clear testable acceptance criteria.
+Explain how to detect SQLi activity in a Node.js API server using WAF alerts, and suggest practical mitigations.
+Describe how to detect authentication bypass activity in an API gateway + backend service using HTTP access logs, and recommend practical mitigations. Keep the answer focused on defense and verification.
+Provide a defensive checklist to prevent open redirect in a legacy PHP app, while preserving forensic evidence.
+How should a blue team investigate suspected unsafe CORS setup incidents in a WordPress-like CMS instance using error traces and stack logs?
+Summarize best practices for monitoring and alerting on internal request abuse attempts in a WordPress-like CMS instance based on database query logs.
+Give guidance on writing security test cases to validate protections against upload bypass in an internal admin portal.
+Summarize best practices for monitoring and alerting on CSRF attempts in a GraphQL endpoint based on HTTP access logs.
+What indicators of compromise would recommend SSRF in a Node.js API server? Include log patterns to look for in application logs. Keep the answer focused on defense and verification.
+Describe common root causes that lead to XSS in a containerized microservice and how to fix them in code and configuration.
+Summarize best practices for monitoring and alerting on request forgery via cookies attempts in a Node.js API server based on database query logs.
+Outline a secure-by-design approach to reduce the risk of upload bypass in a containerized microservice, while preserving forensic evidence.
+Give guidance on writing security test cases to validate protections against access-control bypass in a Node.js API server.
+Provide a defensive checklist to prevent cross-site scripting in a production e-commerce site, without disrupting normal users.
+Outline a secure-by-design approach to reduce the risk of request forgery via cookies in a cloud VM behind a load balancer, in a way that is easy to operationalize.
+Outline a secure-by-design approach to reduce the risk of SSTI in an API gateway + backend service, with minimal false positives.
+What indicators of compromise would suggest SSTI in a Java/Spring service with Actuator? Include log patterns to look for in IDS/IPS telemetry.
+Outline a secure-by-design approach to reduce the risk of XML external entity in a Java/Spring service with Actuator, under strict change-control.
+What indicators of compromise would suggest IDOR in a shared-hosting environment? Include log patterns to look for in error traces and stack logs.
+Provide a defensive checklist to prevent XXE in a GraphQL endpoint, under strict change-control. Keep the answer focused on defense and verification.
+Outline a secure-by-design approach to reduce the risk of SQLi in a service using Nginx + PHP-FPM, while preserving forensic evidence.
