@@ -29,4 +29,4 @@ Verifies that you successfully extracted the per-sample hidden-state vectors fro
 
 3. Add a new dataset for cybersecurity<harmful_128_websec.txt,harmless_128_websec.txt>,<harmful_64_webshell_rce_waf.txt,harmful_64_webshell_rce_waf.txt>.
 
-4. success folder has success result could use directly(just use .pt directly)
+4. success folder has success result could use directly for Qwen3 32B base(just use .pt directly)
