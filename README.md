@@ -1,2 +1,4 @@
 # LLM learning Project
-If help ，please give me a star
+Let's study LLM together!!!
+
+If help ，please give me a STAR🌟🌟
